@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
 
-# ---------------------------
 # DATA LOADING
-# ---------------------------
 def load_abp_segments(filename):
     """
     Load PulseDB ABP segments from CSV file.
@@ -16,9 +14,7 @@ def load_abp_segments(filename):
         segments.append(row.values.astype(float))
     return segments
 
-# ---------------------------
 # DTW DISTANCE FUNCTION
-# ---------------------------
 def dtw(ts1, ts2):
     """
     Classic DTW calculation for two time-series.
