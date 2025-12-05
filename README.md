@@ -2,7 +2,7 @@
 
 # PulseDB Time-Series Clustering and Segment Analysis Project
 
-This repository contains code for clustering and analyzing ABP segments from PulseDB using classical divide-and-conquer and search algorithms.
+Here is google docs share link: https://docs.google.com/document/d/1G22gKsazd6BUx7pFgMkaJcviGwjk-ZsojQ680OPCrK8/edit?usp=sharing 
 
 ## Components
 
