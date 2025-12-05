@@ -1,4 +1,4 @@
-def kadane(ts):
+def kad(ts):
     """
     Classic Kadane's algorithm for max subarray.
     Returns: start index, end index, max sum
