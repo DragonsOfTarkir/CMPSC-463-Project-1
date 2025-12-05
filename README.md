@@ -16,7 +16,7 @@ This repository contains code for clustering and analyzing ABP segments from Pul
 1. Place your CSV in `data/pulsedb_abp_1000_segments.csv` (each row = 1 segment).
 2. Run:
     ```
-    python src/main.py
+    python main.py
     ```
 3. Inspect console outputs and cluster visualizations.
 
