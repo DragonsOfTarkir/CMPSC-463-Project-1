@@ -27,3 +27,19 @@ This repository contains code for clustering and analyzing ABP segments from Pul
 - `closest_pair.py`: Closest pair search.
 - `kadane.py`: Kadane’s max subarray.
 - `main.py`: Project pipeline and summary/report.
+
+## Data: PulseDB
+
+We use the [PulseDB](https://github.com/pulselabteam/PulseDB) dataset for 10-second ABP (Arterial Blood Pressure) segments.
+
+**Instructions to prepare data:**
+1. Download `Train_Subset.mat` from PulseDB shared cloud links (see their README section on Info Files).
+2. Place the `.mat` file in the `data/` directory at the root of this repo (create the folder if it doesn’t exist).
+3. Run the extraction script:
+   ```bash
+   pip install mat73 numpy
+   python extract_abp.py
+   ```
+   This will create `data/abp_1000_segments.npy` (the extracted 1000 ABP segments).
+
+*Note: Raw and extracted data files should not be committed to git; use `.gitignore` to prevent this.*
