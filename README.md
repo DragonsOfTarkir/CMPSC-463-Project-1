@@ -22,10 +22,8 @@ This repository contains code for clustering and analyzing ABP segments from Pul
 
 ## Structure
 
-- `src/utils.py`: Data loading and simple DTW.
-- `src/clustering.py`: Recursive clustering logic.
-- `src/closest_pair.py`: Closest pair search.
-- `src/kadane.py`: Kadane’s max subarray.
-- `src/main.py`: Project pipeline and summary/report.
-
-No machine learning or AI used — all algorithms are standard.
+- `utils.py`: Data loading and simple DTW.
+- `clustering.py`: Recursive clustering logic.
+- `closest_pair.py`: Closest pair search.
+- `kadane.py`: Kadane’s max subarray.
+- `main.py`: Project pipeline and summary/report.
