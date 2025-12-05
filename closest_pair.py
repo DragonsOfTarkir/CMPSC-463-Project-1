@@ -1,4 +1,4 @@
-from src.utils import dtw
+from utils import dtw
 
 def get_closest_pair(cluster):
     # Returns indices and distance for closest pair in a cluster
