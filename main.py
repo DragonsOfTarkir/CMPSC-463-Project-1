@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
-from src.utils import load_abp_segments
-from src.clustering import cluster_divide_and_conquer
-from src.closest_pair import get_closest_pair
-from src.kadane import kadane
+from utils import load_abp_segments
+from clustering import cluster_divide_and_conquer
+from closest_pair import get_closest_pair
+from kadane import kad
 
 def demo_visualize_segment(ts, title=None):
     plt.plot(ts, color='blue')
@@ -24,8 +24,8 @@ def main():
         pair_indices, pair_dist = get_closest_pair(cluster)
         ts1 = cluster[pair_indices[0]]
         ts2 = cluster[pair_indices[1]]
-        interval1 = kadane(ts1)
-        interval2 = kadane(ts2)
+        interval1 = kad(ts1)
+        interval2 = kad(ts2)
         print(f"> Cluster {ci}: size={len(cluster)}, closest_pair={pair_indices}, distance={pair_dist:.2f}")
         print(f"  Max interval ts1: {interval1}")
         print(f"  Max interval ts2: {interval2}")
