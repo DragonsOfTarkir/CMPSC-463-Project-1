@@ -1,4 +1,4 @@
-from src.utils import dtw
+from utils import dtw
 
 def cluster_divide_and_conquer(segments, min_size=15, depth=0):
     # Returns a list of clusters (each cluster: list of segments)
